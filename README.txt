@@ -1,1 +1,1 @@
-Access the app on https://my-sembako-dash-app.herokuapp.com
+Access the app on https://iss-live-loc.herokuapp.com/

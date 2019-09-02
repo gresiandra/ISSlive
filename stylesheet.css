@@ -1,0 +1,13 @@
+.left {
+    width:50%;
+    height:600px;
+    float:left;
+    margin-bottom: 20px;
+}
+
+.right {
+    width:50%;
+    height:600px;
+    float:right;
+    margin-bottom: 20px;
+}

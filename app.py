@@ -76,9 +76,15 @@ app.layout = html.Div(children=[
             ),
 
         html.Div([
+            
             html.Div(id='live-update-text'),
+            html.P('Auto-Location refreshed every 10 secs',
+            style={
+            'font-family': 'Helvetica',
+            'textAlign': 'left',
+            'color':'#303952'}),
             html.Div(id='output-container0',
-                     style = {'margin-left':15}),
+                     style = {'margin-left':10}),
         ],  style = {'width':'50%',
                      'height':600,
                      'float':'right',
@@ -165,7 +171,7 @@ def update_metrics(n):
         address0 = result['features'][0]['place_name']
         locationiss.append(address0)
     except:
-        locationiss.append('Somewhere On The Ocean')
+        locationiss.append('Unknown')
         
     return html.H3(str(locationiss[-1]),
                     style={
@@ -227,7 +233,7 @@ def update_output0(n):
                 },
         style_cell={
                 'textAlign': 'center',
-                'width': 95,
+                'width': 96,
                 'height': 70,
                 }
         

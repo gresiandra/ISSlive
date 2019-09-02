@@ -21,3 +21,4 @@ virtualenv==16.7.3
 docopt==0.6.2
 pipreqs==0.4.9
 yarg==0.1.9
+mapbox==0.3.1
